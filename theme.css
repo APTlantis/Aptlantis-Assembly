@@ -1,0 +1,412 @@
+:root {
+    color-scheme: dark;
+
+    /* Layered graphite carries the UI; warm metal is a precise accent. */
+    --apt-bg-0: #121311;
+    --apt-bg-1: #171917;
+    --apt-bg-2: #1E211F;
+    --apt-bg-3: #272A27;
+    --apt-ink: #D8DAD5;
+    --apt-ink-soft: #B2B6B0;
+    --apt-muted: #858A87;
+    --apt-border: #3A403D;
+    --apt-primary: #B78344;
+    --apt-amber: #C58D46;
+    --apt-brass: #9C7040;
+    --apt-metal: #AAA8A2;
+    --apt-cool: #77868A;
+
+    --b3-theme-primary: var(--apt-primary);
+    --b3-theme-primary-light: rgba(183, 131, 68, 0.22);
+    --b3-theme-primary-lighter: rgba(183, 131, 68, 0.13);
+    --b3-theme-primary-lightest: rgba(183, 131, 68, 0.07);
+    --b3-theme-secondary: var(--apt-metal);
+    --b3-theme-background: var(--apt-bg-0);
+    --b3-theme-surface: var(--apt-bg-1);
+    --b3-theme-surface-light: var(--apt-bg-2);
+    --b3-theme-error: #BE746B;
+    --b3-theme-on-primary: #17130E;
+    --b3-theme-on-secondary: #151514;
+    --b3-theme-on-background: var(--apt-ink);
+    --b3-theme-on-surface: var(--apt-ink-soft);
+    --b3-border-color: rgba(178, 182, 176, 0.19);
+    --b3-scroll-color: rgba(178, 182, 176, 0.26);
+    --b3-list-hover: rgba(216, 218, 213, 0.055);
+    --b3-theme-background-light: rgba(255, 255, 255, 0.032);
+    --b3-theme-surface-lighter: rgba(255, 255, 255, 0.052);
+    --b3-card-error-color: #DEC0BB;
+    --b3-card-error-background: rgba(190, 116, 107, 0.15);
+    --b3-card-warning-color: #DCC9A9;
+    --b3-card-warning-background: rgba(186, 139, 75, 0.15);
+    --b3-card-info-color: #C8CFD1;
+    --b3-card-info-background: rgba(111, 121, 125, 0.15);
+    --b3-card-success-color: #CDD2C5;
+    --b3-card-success-background: rgba(121, 137, 113, 0.15);
+    --b3-font-color: var(--apt-ink);
+    --b3-font-color1: #C69A60;
+    --b3-font-color2: var(--apt-brass);
+    --b3-font-color3: var(--apt-metal);
+    --b3-font-color4: var(--apt-cool);
+    --b3-font-color5: var(--apt-ink-soft);
+    --b3-font-color6: #8D9A9E;
+    --b3-font-color7: #B6905B;
+    --b3-font-color8: var(--b3-theme-error);
+    --b3-font-color9: #B88992;
+    --b3-font-color10: #79A09C;
+    --b3-font-color11: #90A281;
+    --b3-font-color12: #C2A665;
+    --b3-font-color13: var(--b3-theme-background);
+    --b3-font-background1: rgba(186, 139, 75, 0.12);
+    --b3-font-background2: rgba(166, 122, 67, 0.12);
+    --b3-font-background3: rgba(170, 168, 162, 0.10);
+    --b3-font-background4: rgba(111, 121, 125, 0.11);
+    --b3-font-background5: rgba(178, 174, 165, 0.09);
+    --b3-font-background6: rgba(141, 154, 158, 0.12);
+    --b3-font-background7: rgba(182, 144, 91, 0.12);
+    --b3-font-background8: rgba(190, 116, 107, 0.13);
+    --b3-font-background9: rgba(184, 137, 146, 0.11);
+    --b3-font-background10: rgba(121, 160, 156, 0.11);
+    --b3-font-background11: rgba(144, 162, 129, 0.11);
+    --b3-font-background12: rgba(194, 166, 101, 0.12);
+    --b3-font-background13: var(--b3-theme-on-background);
+
+    /* Native SiYuan state coverage */
+    --b3-theme-success: #799071;
+    --b3-theme-on-surface-light: #C4C0B7;
+    --b3-theme-on-surface-lighter: #666762;
+    --b3-theme-on-error: #FFF7F5;
+    --b3-body-background: #0C0E0D;
+    --b3-body-background-hl-opacity: 0.16;
+    --b3-body-background-hl: 36, 34%, 51%;
+    --b3-toolbar-color: var(--b3-theme-on-surface-light);
+    --b3-toolbar-hover: rgba(255, 255, 255, 0.055);
+    --b3-menu-background: var(--apt-bg-2);
+    --b3-menu-icon-color: rgba(178, 182, 176, 0.74);
+    --b3-tooltips-background: #0E0E0D;
+    --b3-tooltips-color: var(--apt-ink);
+    --b3-tooltips-second-color: var(--apt-muted);
+    --b3-tooltips-shadow: 0 4px 14px rgba(0, 0, 0, 0.48);
+    --b3-empty-color: var(--apt-muted);
+    --b3-mask-background: rgba(7, 7, 6, 0.58);
+    --b3-highlight-color: #F0E9DB;
+    --b3-highlight-background: #594522;
+    --b3-highlight-current-background: #76542A;
+    --b3-switch-background: #3B3B38;
+    --b3-switch-border: #96938C;
+    --b3-switch-hover: rgba(255, 255, 255, 0.08);
+    --b3-switch-checked: var(--b3-theme-on-primary);
+    --b3-switch-checked-background: var(--apt-primary);
+    --b3-switch-checked-hover: #C49358;
+    --b3-switch-checked-hover2: rgba(255, 255, 255, 0.07);
+    --b3-dock-shadow-color: #090908;
+    --b3-point-shadow: inset 0 1px rgba(255, 255, 255, 0.08), 0 3px 8px rgba(0, 0, 0, 0.28);
+    --b3-dialog-shadow: 0 16px 44px rgba(0, 0, 0, 0.48), 0 0 0 1px rgba(222, 220, 214, 0.08);
+    --b3-button-shadow: 0 1px 2px rgba(0, 0, 0, 0.32);
+    --b3-button-active-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.36);
+    --b3-graph-p-point: var(--apt-primary);
+    --b3-graph-heading-point: #A7AEB1;
+    --b3-graph-math-point: #799071;
+    --b3-graph-code-point: #8D9A9E;
+    --b3-graph-table-point: #8AA3B0;
+    --b3-graph-list-point: #C69A60;
+    --b3-graph-todo-point: var(--apt-amber);
+    --b3-graph-olist-point: #9B7B55;
+    --b3-graph-listitem-point: #B56E4A;
+    --b3-graph-bq-point: #8F849B;
+    --b3-graph-callout-point: var(--b3-theme-success);
+    --b3-graph-super-point: #A99A85;
+    --b3-graph-doc-point: var(--apt-ink);
+    --b3-graph-tag-point: #9BA06F;
+    --b3-graph-asset-point: #72938F;
+    --b3-graph-line: rgba(178, 182, 176, 0.42);
+    --b3-graph-ref-line: var(--b3-theme-error);
+    --b3-graph-tag-line: #626744;
+    --b3-graph-tag-tag-line: #9BA06F;
+    --b3-graph-asset-line: #456D69;
+    --b3-graph-hl-point: var(--apt-amber);
+    --b3-graph-hl-line: #B56E4A;
+    --b3-protyle-code-background: #0D1010;
+    --b3-protyle-inline-link-color: #C18D51;
+    --b3-protyle-inline-mark-background: #594522;
+    --b3-protyle-inline-mark-color: var(--apt-ink);
+    --b3-protyle-inline-tag-color: #A9A69F;
+    --b3-protyle-inline-blockref-color: #A7AEB1;
+    --b3-protyle-inline-fileref-color: #B6905B;
+    --b3-callout-note: #8D9A9E;
+    --b3-callout-tip: var(--b3-theme-success);
+    --b3-callout-caution: var(--b3-theme-error);
+    --b3-callout-important: #A7AEB1;
+    --b3-callout-warning: var(--apt-amber);
+    --b3-table-even-background: rgba(255, 255, 255, 0.025);
+    --b3-av-gallery-shadow: 0 2px 5px rgba(0, 0, 0, 0.20), 0 0 0 1px var(--b3-border-color);
+    --b3-embed-background: transparent;
+    --b3-bq-background: transparent;
+    --b3-parent-background: var(--b3-theme-background);
+}
+
+body {
+    background: var(--b3-body-background);
+    color: var(--apt-ink);
+}
+
+.toolbar,
+.layout-tab-bar,
+.dock {
+    background: #0F1110;
+    border-color: var(--b3-border-color);
+}
+
+.status {
+    background: #0B0D0C;
+    border-color: var(--b3-border-color);
+    color: var(--apt-muted);
+}
+
+.layout__dockl,
+.layout__dockr,
+.layout__dockb,
+.file-tree,
+.dockPanel {
+    background: var(--apt-bg-1);
+    border-color: var(--b3-border-color);
+}
+
+.layout__center .layout-tab-container,
+.layout-tab-container,
+.protyle,
+.protyle-content,
+.protyle-preview {
+    background: var(--apt-bg-0);
+}
+
+.b3-menu,
+.b3-dialog__container,
+.block__popover,
+.search__layout,
+.config__tab-container {
+    background: var(--apt-bg-1);
+    border-color: var(--b3-border-color);
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.34);
+}
+
+.protyle-breadcrumb,
+.protyle-toolbar {
+    background: rgba(23, 25, 23, 0.97);
+    border-color: var(--b3-border-color);
+}
+
+.b3-list-item:hover,
+.b3-menu__item:hover {
+    background: var(--b3-list-hover);
+    color: var(--apt-ink);
+}
+
+.b3-list-item--focus,
+.b3-menu__item--current,
+.layout-tab-bar .item--focus {
+    background: var(--b3-theme-primary-lighter);
+    color: var(--apt-ink);
+}
+
+.layout-tab-bar .item--focus,
+.b3-button--text {
+    color: #C18D51;
+}
+
+.b3-button {
+    background: var(--apt-primary);
+    color: var(--b3-theme-on-primary);
+    border-color: rgba(200, 176, 139, 0.20);
+}
+
+.b3-button:hover {
+    background: #C49358;
+    color: var(--b3-theme-on-primary);
+}
+
+.protyle-title__input {
+    color: var(--apt-ink);
+}
+
+.protyle-wysiwyg [data-node-id] {
+    caret-color: var(--apt-amber);
+}
+
+.protyle-wysiwyg [data-node-id]:hover {
+    background: rgba(255, 255, 255, 0.024);
+}
+
+.protyle-wysiwyg ::selection,
+.protyle-title__input::selection,
+::selection {
+    background: rgba(58, 65, 69, 0.82);
+    color: var(--apt-ink);
+}
+
+.protyle-wysiwyg a,
+.b3-typography a,
+.protyle-breadcrumb__item--active {
+    color: #C18D51;
+}
+
+.protyle-wysiwyg [data-type="NodeHeading"][data-subtype="h1"],
+.b3-typography h1 {
+    color: var(--apt-ink);
+}
+
+.protyle-wysiwyg [data-type="NodeHeading"][data-subtype="h2"],
+.b3-typography h2 {
+    color: var(--apt-ink-soft);
+    border-bottom: 1px solid var(--b3-border-color);
+}
+
+.protyle-wysiwyg [data-type="NodeHeading"][data-subtype="h3"],
+.b3-typography h3 {
+    color: #C8BAA0;
+}
+
+.protyle-wysiwyg blockquote,
+.b3-typography blockquote {
+    background: rgba(178, 182, 176, 0.045);
+    border-left: 3px solid rgba(193, 141, 81, 0.48);
+    color: var(--apt-ink-soft);
+}
+
+.protyle-wysiwyg code:not(.hljs),
+.b3-typography code:not(.hljs) {
+    background: #0D1010;
+    color: #C18D51;
+    border: 1px solid rgba(178, 182, 176, 0.16);
+}
+
+.protyle-wysiwyg pre,
+.b3-typography pre,
+.hljs {
+    background: #0C0F10;
+    color: var(--apt-ink);
+    border: 1px solid var(--b3-border-color);
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title.function_ {
+    color: #C18D51;
+}
+
+.hljs-string,
+.hljs-attr,
+.hljs-symbol {
+    color: #A98558;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-built_in {
+    color: var(--apt-metal);
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: var(--apt-muted);
+    font-style: italic;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-type,
+.hljs-class,
+.hljs-title.class_ {
+    color: #8F9DA0;
+}
+
+.hljs-property,
+.hljs-variable,
+.hljs-params,
+.hljs-punctuation,
+.hljs-operator {
+    color: var(--apt-ink-soft);
+}
+
+.hljs-addition {
+    color: #A9BEA2;
+    background: rgba(121, 144, 113, 0.11);
+}
+
+.hljs-deletion {
+    color: #E1A099;
+    background: rgba(190, 116, 107, 0.11);
+}
+
+.protyle-wysiwyg table,
+.b3-typography table {
+    background: rgba(255, 255, 255, 0.016);
+    border-color: var(--b3-border-color);
+}
+
+.protyle-wysiwyg th,
+.b3-typography th {
+    background: rgba(170, 168, 162, 0.055);
+    color: var(--apt-ink);
+}
+
+.protyle-wysiwyg td,
+.protyle-wysiwyg th,
+.b3-typography td,
+.b3-typography th {
+    border-color: var(--b3-border-color);
+}
+
+.protyle-wysiwyg mark,
+.b3-typography mark {
+    background: rgba(186, 139, 75, 0.21);
+    color: var(--apt-ink);
+}
+
+.b3-text-field,
+.b3-text-field.fn__block,
+.b3-select {
+    background: var(--apt-bg-2);
+    color: var(--apt-ink);
+    border-color: var(--b3-border-color);
+}
+
+.b3-button--text,
+.b3-button--cancel {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #C18D51;
+}
+
+.b3-button--outline {
+    background: transparent;
+    border-color: rgba(193, 141, 81, 0.48);
+    color: #C18D51;
+}
+
+.b3-button--remove,
+.b3-button--warning {
+    background: #774B46;
+    border-color: #9E625B;
+    color: #FFF7F5;
+}
+
+.b3-button:disabled,
+.b3-button[disabled],
+.b3-text-field:disabled,
+.b3-select:disabled,
+.fn__disabled {
+    cursor: not-allowed;
+    opacity: 0.48;
+}
+
+:where(button, a, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid rgba(193, 141, 81, 0.78);
+    outline-offset: 2px;
+}
+
+.protyle-wysiwyg a:visited,
+.b3-typography a:visited {
+    color: #A99A85;
+}
